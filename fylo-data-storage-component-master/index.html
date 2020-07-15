@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+        <div class="left">
+              <div class="logo"><img src="images/logo.svg"></div>
+              <div class="left-content">
+                <ul>
+                    <li><img src="images/icon-upload.svg"></li>
+                    <li><img src="images/icon-document.svg"></li>
+                    <li><img src="images/icon-folder.svg"></li>
+                </ul>
+              </div>
+        </div>
+        <div class="right">
+          <div class="first-line">You’ve used <span id="val"> </span> GB of your storage</div>
+          <div class="right-box">
+            <div class="box-text"><span id="val2">185</span> GB LEFT </div>
+            <div class="marker"></div>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="1000" value="815" class="slider" id="myRange"/>
+          </div>
+          <div class="lower">
+            <div class="lower-left">0 GB</div>
+            <div class="lower-right">1000 GB</div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("val");
+    var output2 = document.getElementById("val2")
+    output.innerHTML = slider.value;
+    output2.innerHTML = (1000-slider.value);
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      output2.innerHTML = (1000- this.value);
+    }
+    </script>
+</body>
+</html>
