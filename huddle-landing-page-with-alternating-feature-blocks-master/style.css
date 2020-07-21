@@ -96,7 +96,7 @@ padding-left: 2rem;
     margin-top: 1.5rem;
 }
 main{
-    position: absolute;
+    position: relative;
 }
 .main{
     display: flex;
@@ -134,10 +134,93 @@ main .reverse{
     margin-left: 2rem;
 }
 main .main-box{
-    position: relative;
+    position: absolute;
     justify-content: center;
     right:-29rem;
+    right: 31rem;
+    top: 81rem;
 }
-/* footer{
+main .main-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    border-radius: 15px;
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background: white;
+    z-index: 1;
+}
+main .main-box button{
+    margin-top: 1rem;
+    display: inline-block;
+    align-content: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border-style: none;
+    background-color: hsl(322, 100%, 66%);
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgb(127, 141, 152, 0.6);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
     background-color: hsl(192, 100%, 9%);
-} */
+    color:#f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8rem 6rem 2rem 6rem;
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 13px;
+    font-weight: 400;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer .foot ul{
+    list-style: none;
+}
+.one .logo1 img{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.one .content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.content img{
+    width: 12px;
+    height: 12px;
+    margin: 12px;
+}
+.content p{
+    margin: 12px 0rem
+}
+.two li, .three li{
+    margin: 5px;
+}
+.four ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    padding: 20px;
+}
+.four .fa{
+    color:black;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0rem 10px;
+}
+.floating{
+    position: absolute;
+    top: 22rem;
+    right: 2.5rem;
+}
